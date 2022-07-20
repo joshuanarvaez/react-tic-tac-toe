@@ -1,13 +1,48 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+    color: white;
+    margin: 20px;
+    font: 32px "Century Gothic", Futura, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black ;
+}
+
+.board {
+    background-color: orange;
+    margin: 10px;
+    padding: 20px;
+}
+
+.board-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* each square */
+.square {
+    background-color: gray;
+    color: white;
+    border: 1px solid white;
+    padding: 0;
+    font-size: 84px;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+/* when square is clicked or in focus */
+.square:focus {
+    outline: none;
+    background-color: black;
+}
+
+/* player turn */
+.status {
+    margin: 20px;
+    font-size: 24px;
 }
