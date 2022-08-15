@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #104e7a;
     color: white;
     margin: 20px;
     font: 32px "Century Gothic", Futura, sans-serif;
@@ -9,13 +9,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black ;
+    margin-top: 30px;
+    font-weight: bolder;
 }
 
 .board {
-    background-color: orange;
-    margin: 10px;
-    padding: 20px;
+    background-color: #2d87c8;
+    margin: 30px;
+    padding: 30px;
+    border: 5px solid white;
+    border-radius: 20px;
 }
 
 .board-row {
@@ -25,9 +28,9 @@ body {
 
 /* each square */
 .square {
-    background-color: gray;
+    background-color: lightgray;
     color: white;
-    border: 1px solid white;
+    border: 3px solid white;
     padding: 0;
     font-size: 84px;
     text-align: center;
@@ -45,4 +48,6 @@ body {
 .status {
     margin: 20px;
     font-size: 24px;
+    text-align: center;
+    font-weight: bolder;
 }
